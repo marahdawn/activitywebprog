@@ -11,6 +11,6 @@ final class DashboardController extends AbstractController
     #[Route('/dashboard', name: 'app_dashboard')]
     public function index(): Response
     {
-                return new Response('Welcome to the Dashboard (protected area)');
+                return $this->render('dashboard/index.html.twig');
     }
 }
